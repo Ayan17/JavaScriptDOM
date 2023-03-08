@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+   
+        <h2 id="main_heading">Main Heading</h2>
+        <p id="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, reprehenderit.</p>
+    <button id="btn" onclick="clicked()">Click</button>
+        <h3 id="heading"></h3>
+
+
+<script>
+    function clicked (){
+        // console.log("button clicked")
+        document.getElementById('heading').innerHTML = 'The button is clicked';
+        document.getElementById('heading').style.color = ' #C70039 '
+
+        //another method of on click function by creating element 
+        function click2 () {
+            let p = document.createElement('p')
+            p.innerHTML = 'The button clicked'
+        }
+    }
+document.getElementById('main_heading').innerHTML = 'The main heading is Updated';
+    let main = document.getElementById('main_heading').innerHTML = 'The main heading is Updated';
+    let content = document.getElementById('content').innerHTML = 'The content is updated by DOM';
+    let button = document.getElementById('btn').innerHTML = 'Click button';
+
+    main.style
+
+</script>
+
+    
+</body>
+</html>
